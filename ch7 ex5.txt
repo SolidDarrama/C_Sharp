@@ -1,0 +1,31 @@
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9.Chapter7
+{
+    class Ex5
+    {
+        static void Main2(string[] args)
+        {
+
+            string[] arr4 = new string[6];
+            arr4[0] = "Buy it today";
+            arr4[1] = "You won't regret your purchase";
+            arr4[2] = "Huge Sale Now";
+            arr4[3] = "One of a kind products";
+            arr4[4] = "Great gift for loved ones";
+            arr4[5] = "We have the products you need";
+
+            Console.WriteLine("Hello Loyal Customer");
+            Random r = new Random();
+            Console.WriteLine(arr4[r.Next(0, 5)]);
+            Console.WriteLine(arr4[r.Next(0, 5)]);
+            Console.WriteLine(arr4[r.Next(0, 5)]);
+
+        }
+        private static void Swap(ref int one, ref int two)
+        {
+
+        }
+    }
+}
